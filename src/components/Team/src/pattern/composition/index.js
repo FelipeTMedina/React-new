@@ -8,3 +8,9 @@ export const Team = {
     Section: Section
 }
 
+const user = {
+    name: "igor",
+    age: 20,
+    gender: "masculino",
+    component: Main
+}

@@ -1,0 +1,31 @@
+.titulo{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+
+}
+.descr{
+    font-size: 16px;
+    text-transform: uppercase;
+ 
+   
+}
+
+.square{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+
+}
+
+.aling_all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+

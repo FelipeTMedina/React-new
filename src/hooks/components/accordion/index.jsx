@@ -1,15 +1,22 @@
-import { AcoordionButton, AcoordionContainer, AcoordionImage, AcoordionText } from "./style";
-
+import { AcoordionButton, AcoordionContainer, AcoordionContent, AcoordionImage, AcoordionText, AcoordionWrapper, ContentText } from "./style";
+import { useState } from "react";
 
 export default function Accordion(){
 
+    const [ visible, setVisible] = useState(false)
+
+    function HandleAccordion(){
+        return setVisible(true)
+    }
     return(
+
+        <AcoordionWrapper>
 
         <AcoordionContainer>
 
             <AcoordionText> what is an acoordion component?</AcoordionText>
 
-            <AcoordionButton>
+            <AcoordionButton onClick={HandleAccordion}>
                     <AcoordionImage/>
             </AcoordionButton>
 
@@ -18,9 +25,17 @@ export default function Accordion(){
         </AcoordionContainer>
 
 
-      
+      {
+        visible && (
+        <AcoordionContent>
+            <ContentText>
+            what is an acoordion component?
+            </ContentText>
+        </AcoordionContent>
 
+      )}
 
+    </AcoordionWrapper>
 
     );
 }

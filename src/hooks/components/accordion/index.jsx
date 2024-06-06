@@ -6,7 +6,7 @@ export default function Accordion(){
     const [ visible, setVisible] = useState(false)
 
     function HandleAccordion(){
-        return setVisible(true)
+        return setVisible(!visible)
     }
     return(
 
